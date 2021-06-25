@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: shutdown hosts
+       command: /sbin/poweroff -p now
